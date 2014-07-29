@@ -1,0 +1,38 @@
+#main{
+  text-align: center;
+}
+#main_image{
+  width: 600px;
+  height: 400px;
+}
+
+#home_title{
+  text-align: center;
+  font-size: 50px;
+}
+
+#main_img{
+/*  display: inline-block;
+  vertical-align: top;*/
+  margin: 20px;
+  width:600px;
+  margin-left: 400px;
+}
+
+#main_img:hover{
+  opacity: 0.7;
+}
+
+.small{
+  width: 250px;
+  height: 150px;
+}
+
+.big{
+  width: 600px;
+  height: 400px;
+}
+
+#main_title{
+  text-align: center;
+}

@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Rira Choi</title>
+        <link rel="stylesheet" href="assets/stylesheet/style.css">
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/lib/underscore.js"></script>
+        <script src="js/lib/backbone.js"></script>
+        <script src="js/lib/handlebars.js"></script>
+
+        <script src="js/app/collections/posts.js"></script>
+        <script src="js/app/models/post.js"></script>
+        <script src="js/app/views/postListView.js"></script>
+        <script src="js/app/views/postView.js"></script>
+        <script src="js/app/views/appView.js"></script>
+        <script src="js/app/router/router.js"></script>
+        <script src="js/javascript.js"></script>
 
     </head>
     <body>
-      <h1>Hello World</h1>
+      <h1 id='home_title'>Rira Choi's Projects</h1>
+      <div id='main'>
+      </div>
+
+        <script id='app-template' type="text/handlebars-template">
+            <div id="projects"></div>
+        </script>
+
+        <script id="projectsList-template" type="text/handlebars-template">
+            <img src='{{ main_image }}' id="main_image"/>
+        </script>
+
+        <script id="project-template" type="text/handlebars-template">
+            <article>
+
+                <div id="main_img"><img src='{{ main_image }}' id="main_image"/></div>
+
+                <h1>{{ title }}</h1>
+                <p>Built By : {{ application }}</p>
+
+                <div id="small_imgs">
+                  <img src='{{ image1 }}' class="small">
+                  <img src='{{ image2 }}' class="small">
+                  <img src='{{ image3 }}' class="small">
+
+                  <img src='{{ image4 }}' class="small">
+                  <img src='{{ image5 }}' class="small">
+                  <img src='{{ image6 }}' class="small">
+                  <img src='{{ image7 }}' class="small">
+                  <img src='{{ image8 }}' class="small">
+                  <img src='{{ image9 }}' class="small">
+                  <img src='{{ image10 }}' class="small">
+                  <img src='{{ image11 }}' class="small">
+
+                </div>
+
+            </article>
+        </script>
 
     </body>
 </html>
