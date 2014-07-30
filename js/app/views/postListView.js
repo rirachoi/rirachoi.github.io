@@ -1,11 +1,9 @@
 var app = app || {};
 
 app.PostListView = Backbone.View.extend({
-  //crearing brend new li
-  tagName: 'div id="main_img"',
+
   events: {
-    'click': 'view',
-    'mouseover': 'honverEffect'
+    'click': 'view'
   },
 
   initialize: function(){
@@ -26,10 +24,8 @@ app.PostListView = Backbone.View.extend({
     //console.log('you clicked a post list item');
     app.router.navigate('posts/' + this.model.get('id'), true );
     // true means naviagte me and run code any code with it
-  },
-
-  honverEffect: function(){
-
   }
+
+
 
 });

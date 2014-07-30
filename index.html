@@ -37,24 +37,15 @@
 
                 <h1>{{ title }}</h1>
                 <p>Built By : {{ application }}</p>
-
                 <div id="small_imgs">
-                  <img src='{{ image1 }}' class="small">
-                  <img src='{{ image2 }}' class="small">
-                  <img src='{{ image3 }}' class="small">
 
-                  <img src='{{ image4 }}' class="small">
-                  <img src='{{ image5 }}' class="small">
-                  <img src='{{ image6 }}' class="small">
-                  <img src='{{ image7 }}' class="small">
-                  <img src='{{ image8 }}' class="small">
-                  <img src='{{ image9 }}' class="small">
-                  <img src='{{ image10 }}' class="small">
-                  <img src='{{ image11 }}' class="small">
+                  {{#each images}}
+                    <img src='{{ this }}' class="small"/>
+                  {{/each}}
 
                 </div>
-
             </article>
+
         </script>
 
     </body>

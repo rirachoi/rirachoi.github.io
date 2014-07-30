@@ -3,16 +3,12 @@ var app = app || {};
 app.PostView = Backbone.View.extend({
   el: '#main',
 
-  tagName: 'img',
-
   events: {
-    // 'mouseover': 'viewBiggerImg',
-    // 'click': 'backSmallImg'
+    'click': 'viewBiggerImg'
   },
 
   initialize: function() {
     this.render();
-
   },
 
   render: function(){
@@ -22,16 +18,10 @@ app.PostView = Backbone.View.extend({
 
   },
 
-  viewBiggerImg: function() {
-    this.$('#small_imgs img')
-      .removeClass('small')
-      .addClass('big')
-  },
-
-  backSmallImg: function(){
-    this.$('#small_imgs img')
-      .removeClass('big')
-      .addClass('small')
+  viewBiggerImg: function(event) {
+    var $clickedImg = $(event.target);
+    $clickedImg.toggleClass('big');
   }
+
 
 });

@@ -19,10 +19,6 @@
   margin-left: 400px;
 }
 
-#main_img:hover{
-  opacity: 0.7;
-}
-
 .small{
   width: 250px;
   height: 150px;
@@ -35,4 +31,9 @@
 
 #main_title{
   text-align: center;
+}
+
+#small_imgs{
+  max-width: 800px;
+  margin-left: 300px;
 }
