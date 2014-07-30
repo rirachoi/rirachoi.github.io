@@ -31,20 +31,31 @@
         </script>
 
         <script id="project-template" type="text/handlebars-template">
-            <article>
+            <section id="left_img">
 
-                <div id="main_img"><img src='{{ main_image }}' id="main_image"/></div>
+                <div id="main_img">
+                  <img src='{{ main_image }}' id="main_image"/>
+                </div>
 
                 <h1>{{ title }}</h1>
                 <p>Built By : {{ application }}</p>
                 <div id="small_imgs">
-
                   {{#each images}}
-                    <img src='{{ this }}' class="small"/>
-                  {{/each}}
+                    <img src='assets/image/{{ this }}' class="small"/>
 
+                    <img src='assets/image_hover/{{ this }}' class="small_description"/>
+                  {{/each}}
                 </div>
-            </article>
+
+            </section>
+
+            <section id="right_info">
+
+            </section>
+
+            <section id="right_talking">
+
+            </section>
 
         </script>
 

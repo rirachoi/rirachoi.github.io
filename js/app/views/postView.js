@@ -4,11 +4,14 @@ app.PostView = Backbone.View.extend({
   el: '#main',
 
   events: {
-    'click': 'viewBiggerImg'
+    'click': 'viewBiggerImg',
+    'keypress': 'backToPlain'
   },
 
   initialize: function() {
     this.render();
+    $('.small_description').hide();
+
   },
 
   render: function(){
@@ -20,7 +23,22 @@ app.PostView = Backbone.View.extend({
 
   viewBiggerImg: function(event) {
     var $clickedImg = $(event.target);
-    $clickedImg.toggleClass('big');
+    // console.log($clickedImg);
+    // console.log(this.model.attributes.images);
+    var image_array = this.model.attributes.images
+    //$clickedImg.attr('src', 'assets/image_hover/'+ );
+    //$clickedImg.toggleClass('big');
+    $('.small').hide();
+    $('.small_description').fadeIn('slow').toggleClass('big');
+  },
+
+  backToPlain: function(key){
+    if (key.which === 27) {
+      console.log('keypress');
+       $('.small').fadeIn('slow');
+       $('.small_description').hide();
+       // this.close();
+    }
   }
 
 

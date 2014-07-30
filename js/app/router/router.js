@@ -1,6 +1,6 @@
 var app = app || {};
 
-////// app's Routers
+//////app's Routers
 app.Router = Backbone.Router.extend({
   routes: {
     '': 'index',
@@ -16,9 +16,10 @@ app.Router = Backbone.Router.extend({
         application: "Ruby (week2 day4)",
         main_image: "assets/image/mta/main.png",
         images: [
-        "assets/image/mta/result.png",
-        "assets/image/mta/result_with_map.png",
-        "assets/image/mta/map.gif"
+          "mta/main.png",
+          "mta/result.png",
+          "mta/result_with_map.png",
+          "mta/map.gif"
         ]
       }),
 
@@ -27,9 +28,10 @@ app.Router = Backbone.Router.extend({
         application: "Sinatra (week3 day2)",
         main_image: "assets/image/butterflies/main.png",
         images: [
-          "assets/image/butterflies/display.png",
-          "assets/image/butterflies/butterfly.png",
-          "assets/image/butterflies/display_state.png"
+          "butterflies/main.png",
+          "butterflies/display.png",
+          "butterflies/butterfly.png",
+          "butterflies/display_state.png"
         ]
       }),
 
@@ -38,10 +40,10 @@ app.Router = Backbone.Router.extend({
         application: "Sinatra (week3 day3)",
         main_image: "assets/image/alls_watch/main.png",
         images: [
-          "assets/image/alls_watch/main_with_hover.png",
-          "assets/image/alls_watch/list.png",
-          "assets/image/alls_watch/category.png",
-          "assets/image/alls_watch/category_list.png"
+          "alls_watch/main_with_hover.png",
+          "alls_watch/list.png",
+          "alls_watch/category.png",
+          "alls_watch/category_list.png"
         ]
       }),
 
@@ -50,13 +52,13 @@ app.Router = Backbone.Router.extend({
         application: "Rails (week4 day1)",
         main_image: "assets/image/ms_finder/main.png",
         images: [
-          "assets/image/ms_finder/movie_search.png",
-          "assets/image/ms_finder/quick_result.png",
-          "assets/image/ms_finder/quick_result_with_plot.png",
-          "assets/image/ms_finder/movie_list.png",
-          "assets/image/ms_finder/movie_list_result.png",
-          "assets/image/ms_finder/stock_search.png",
-          "assets/image/ms_finder/stock_result.png"
+          "ms_finder/movie_search.png",
+          "ms_finder/quick_result.png",
+          "ms_finder/quick_result_with_plot.png",
+          "ms_finder/movie_list.png",
+          "ms_finder/movie_list_result.png",
+          "ms_finder/stock_search.png",
+          "ms_finder/stock_result.png"
         ]
       }),
 
@@ -65,13 +67,12 @@ app.Router = Backbone.Router.extend({
         application: "Rails with Database (week4 day3)",
         main_image: "assets/image/book_keeper/main.png",
         images: [
-          "assets/image/book_keeper/main.png",
-          "assets/image/book_keeper/books.png",
-          "assets/image/book_keeper/book_info.png",
-          "assets/image/book_keeper/book_info2.png",
-          "assets/image/book_keeper/authors.png",
-          "assets/image/book_keeper/author_info.png",
-          "assets/image/book_keeper/author_info_with_hover.png"
+          "book_keeper/books.png",
+          "book_keeper/book_info.png",
+          "book_keeper/book_info2.png",
+          "book_keeper/authors.png",
+          "book_keeper/author_info.png",
+          "book_keeper/author_info_with_hover.png"
         ]
       }),
 
@@ -80,12 +81,12 @@ app.Router = Backbone.Router.extend({
         application: "First Project (week5)",
         main_image: "assets/image/soluho_calendar/main.png",
         images: [
-          "assets/image/soluho_calendar/user_calendar.png",
-          "assets/image/soluho_calendar/user_event_list.png",
-          "assets/image/soluho_calendar/user_details.png",
-          "assets/image/soluho_calendar/event_category.png",
-          "assets/image/soluho_calendar/int_public_holiday.png",
-          "assets/image/soluho_calendar/int_public_holiday_list.png"
+          "soluho_calendar/user_calendar.png",
+          "soluho_calendar/user_event_list.png",
+          "soluho_calendar/user_details.png",
+          "soluho_calendar/event_category.png",
+          "soluho_calendar/int_public_holiday.png",
+          "soluho_calendar/int_public_holiday_list.png"
         ]
 
       }),
@@ -95,16 +96,16 @@ app.Router = Backbone.Router.extend({
         application: "Second Group Project (week8)",
         main_image: "assets/image/fireball/game_main.png",
         images: [
-          "assets/image/fireball/game_lang.png",
-          "assets/image/fireball/game_play.png",
-          "assets/image/fireball/game_play2.png",
-          "assets/image/fireball/game_finish1.png",
-          "assets/image/fireball/game_finish2.png",
-          "assets/image/fireball/game_finish4.png",
-          "assets/image/fireball/chat.png",
-          "assets/image/fireball/chat_lang.png",
-          "assets/image/fireball/edit.png",
-          "assets/image/fireball/index.png"
+          "fireball/game_lang.png",
+          "fireball/game_play.png",
+          "fireball/game_play2.png",
+          "fireball/game_finish1.png",
+          "fireball/game_finish2.png",
+          "fireball/game_finish4.png",
+          "fireball/chat.png",
+          "fireball/chat_lang.png",
+          "fireball/edit.png",
+          "fireball/index.png"
         ]
 
       })

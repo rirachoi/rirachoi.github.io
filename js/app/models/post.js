@@ -9,6 +9,7 @@ app.Post = Backbone.Model.extend({
     main_image: "New Project Main Image",
     images: []
 
+
   }
 
 });

@@ -1,3 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+body{
+  font-family: 'Indie Flower', cursive;
+  max-width: 960px;
+}
+
+
 #main{
   text-align: center;
 }
@@ -15,18 +22,18 @@
 /*  display: inline-block;
   vertical-align: top;*/
   margin: 20px;
-  width:600px;
-  margin-left: 400px;
+  width:800px;
+  margin-left: 10px;
 }
 
 .small{
-  width: 250px;
-  height: 150px;
+  width: 400px;
+  height: 300px;
 }
 
 .big{
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 600px;
 }
 
 #main_title{
@@ -34,6 +41,16 @@
 }
 
 #small_imgs{
-  max-width: 800px;
-  margin-left: 300px;
+  margin-left: 100px;
+}
+
+#small_imgs, #imgs_description{
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+#small_imgs img, #imgs_description img{
+  display: block;
+  margin: 10px;
 }

@@ -6,9 +6,7 @@ $(document).ready(function(){
     appView: $('#app-template').html(),
     postListView: $('#projectsList-template').html(),
     //  $('list-template').html()  == <span>{{ title }}</span>
-    postView: $('#project-template').html(),
-    smallImagesView: $('#thumbnail-template').html()
-
+    postView: $('#project-template').html()
   };
 
   app.router = new app.Router();
