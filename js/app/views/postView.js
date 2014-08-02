@@ -4,8 +4,9 @@ app.PostView = Backbone.View.extend({
   el: '#main',
 
   events: {
-    'click': 'viewBiggerImg',
-    'keypress': 'backToPlain'
+    'click .btnDescription' : 'viewImgDescription',
+    'click .btnBack' : 'backToSmallImg',
+    'keypress .small_description': 'backToPlain'
   },
 
   initialize: function() {
@@ -21,15 +22,16 @@ app.PostView = Backbone.View.extend({
 
   },
 
-  viewBiggerImg: function(event) {
+  viewImgDescription: function(event) {
     var $clickedImg = $(event.target);
-    // console.log($clickedImg);
+    console.log($clickedImg);
     // console.log(this.model.attributes.images);
     var image_array = this.model.attributes.images
     //$clickedImg.attr('src', 'assets/image_hover/'+ );
     //$clickedImg.toggleClass('big');
     $('.small').hide();
     $('.small_description').fadeIn('slow').toggleClass('big');
+    $('.btnDescription').text('Back!').toggleClass('btnBack');
   },
 
   backToPlain: function(key){
@@ -39,6 +41,12 @@ app.PostView = Backbone.View.extend({
        $('.small_description').hide();
        // this.close();
     }
+  },
+
+  backToSmallImg: function(event){
+    $('.small').fadeIn('slow');
+    $('.small_description').hide();
+    $('.btnDescription').text('Description');
   }
 
 
