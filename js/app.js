@@ -11,6 +11,9 @@
             // set the location.hash to the id of
             // the element you wish to scroll to.
             $location.hash(eID);
+            if (eID === "contact"){
+              $('.first-name').attr({'autofocus': 'ture' });
+            }
             // call $anchorScroll()
             anchorSmoothScroll.scrollTo(eID);
 
