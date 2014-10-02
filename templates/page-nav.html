@@ -1,0 +1,22 @@
+<ul class="nav" id="page-nav">
+  <li ng-class="{ active: tab.isSelected(0) }">
+    <a href ng-click="tab.setTab(0); gotoElement('home')">
+      HOME
+    </a>
+  </li>
+  <li ng-class="{ active: tab.isSelected(1) }">
+    <a href ng-click="tab.setTab(1); gotoElement('about')">
+      ABOUT
+    </a>
+  </li>
+  <li ng-class="{ active: tab.isSelected(2) }">
+    <a href ng-click="tab.setTab(2); gotoElement('projects')">
+      PROJECT
+    </a>
+  </li>
+  <li ng-class="{ active: tab.isSelected(3) }">
+    <a href ng-click="tab.setTab(3); gotoElement('contact')">
+      CONTACT
+    </a>
+  </li>
+</ul>

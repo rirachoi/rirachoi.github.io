@@ -1,0 +1,42 @@
+<div id="page-body">
+  <div id="home">
+    <div class="blank"></div>
+  </div>
+  <div id="about">
+    <div class="blank"></div>
+    <div class='about-summary'>
+      <p>I finally found my calling in life. Originating in South Korea and previously pursuing a career in Economics and Business Management who would have thought that my destiny lay on foreign soil within the tabbed text and coloured brackets of Sublime Text and the glowing green of OSX Terminal.</p>
+
+      <p>Trolling through JSON API's, conquering the Javascript, exploring the rainbow in CSS or creating and tuning MVC's, these are a few of my favorite things.</p>
+
+      <p>My passion is exploring my newly obtained web skills and applying them to your functional and technical specifications. Are you looking for a web developer disguised as a TDD geek, who installs gems in her sleep or someone who draws creative images as a hobby, to add that little extra something to your application? That's where I come in.</p>
+
+      <p>On a professional note : I have a keen eye to detail, an analytical approach to problem solving and a dedicated and learned way of thinking with a touch of design flair.</p>
+    </div>
+
+    <div class='web-skill-icon' ng-controller="SkillsController as skill">
+      <ul>
+        <li ng-repeat="mySkill in skill.mySkills">
+          <img src="{{ mySkill.image }}" title="{{ mySkill.name}}"/>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="projects" ng-controller="ProjectsController as project">
+    <div class="blank"></div>
+    <ul>
+      <li ng-repeat="myProject in project.myProjects">
+        <div class="pro-left">
+          <h2>{{ myProject.name }}</h2>
+          <p>{{ myProject.description }}</p>
+          <a href="{{ myProject.url}}" title="Demo" target="_blank">DEMO</a>
+          <a href="{{ myProject.github}}" titme="Code" target="_blank">GITHUB</a>
+        </div>
+        <div class="pro-right">
+          <img src="{{ myProject.image }}" title="{{ myProject.name }}" target="_blank"/>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
