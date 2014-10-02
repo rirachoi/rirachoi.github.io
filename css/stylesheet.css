@@ -34,7 +34,7 @@ body{
 
 #page-header .quote{
   width: 20%;
-  background-color: rgba(225, 225, 225, 0.5);
+  background-color: rgba(243, 154, 249, 0.2);
 }
 
 /* BODY */
@@ -48,11 +48,17 @@ body{
   height: 170px;
 }
 
-
-
 #page-body #home{
-  height: 500px;
-  margin: 0px auto;
+  height: 700px;
+  margin: -30px auto;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: #FFCCCC;
+}
+
+#page-body #home h1{
+  border-bottom: 3px solid #FFF0F0;
 }
 
 #page-body #about{
