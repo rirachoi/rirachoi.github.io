@@ -169,7 +169,7 @@
         github:"https://github.com/rirachoi/world_map_news",
         image: "http://i.imgur.com/qSXtyDG.png",
         description: "An international news application using geographical location with the world map. USING: Ruby on Rails, jQuery, feedzilla API, TDD with Simplecov and RSpec."
-      },{ name:"NSWFR Nortification",
+      },{ name:"NSWFR Notification",
         url:"#",
         github:"https://github.com/rirachoi/nswfire_zabbix",
         image: "http://i.imgur.com/suv8bt1.png",

@@ -245,7 +245,7 @@ html,body{
 }
 
 .contact textarea{
-  height: 170px;
+  height: 150px;
 }
 
 
@@ -383,5 +383,18 @@ footer .links a{
   .quote{
     display: none;
   }
+
+  .blank{
+    height: 100px;
+  }
+
+  .contact input, .contact textarea{
+    padding: 0.5em;
+  }
+
+  .contact textarea{
+    height: 95px;
+  }
+
 }
 
