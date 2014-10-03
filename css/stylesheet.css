@@ -49,7 +49,7 @@ body{
 }
 
 .blank{
-  height: 170px;
+  height: 150px;
 }
 /* HOME */
 #page-body #home{
@@ -82,6 +82,7 @@ body{
 .web-skill-icon ul{
   margin: auto;
   width: 100%;
+  padding-bottom: 0.5em;
 }
 
 .web-skill-icon li{
@@ -112,39 +113,9 @@ body{
   font-size: 15px;
 }
 
-.commentDiv{
-  display: block;
-}
-
 .about-summary{
   width: 700px;
   margin: auto;
-}
-
-/* comment css */
-#Rub{
-  margin-bottom: 200px;
-}
-#Jav{
-  margin-bottom: 170px;
-}
-#jQu{
-  margin-bottom: 140px;
-}
-#HTM{
-  margin-bottom: 110px;
-}
-#CSS{
-  margin-bottom: 90px;
-}
-#Ang{
-  margin-bottom: 60px;
-}
-#SAS{
-  margin-bottom: 30px;
-}
-#GIT{
-  margin-top: 5px;
 }
 
 /* PROJECTS */
@@ -268,4 +239,85 @@ footer .links a{
   padding: 0.5em;
 }
 
+@media screen and (max-width: 960px){
+  body{
+    min-height: 100%;
+    width: 100%;
+  }
+
+  #page-header,
+  #page-body,
+  #page-footer{
+    width:100%;
+    min-height: 100%;
+  }
+
+  .quote{
+    margin-top: -85px;
+    padding-right: 2em;
+  }
+
+  .quote blockquote{
+    width: 100%;
+  }
+
+   #page-footer .contact{
+    width: 100%;
+  }
+
+  .web-skill-icon ul{
+    width: 100%;
+    margin: auto;
+  }
+
+  .web-skill-icon img{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 640px){
+  .pro-left,
+  .pro-right{
+    display: block;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .pro-left p, .about-summary {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    padding-bottom: 1em;
+  }
+  .web-skill-icon, .web-skill-icon section{
+    width: 100%;
+    margin: auto;
+  }
+
+  .web-skill-icon ul{
+    padding:0;
+    margin: auto;
+  }
+
+  .web-skill-icon img{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+  }
+
+  .quote{
+    margin-top: -55px;
+    padding-right: 7em;
+    width: 40%;
+  }
+
+  .quote blockquote{
+    font-size: 12px;
+    width: 100%;
+  }
+}
 
