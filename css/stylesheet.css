@@ -43,9 +43,16 @@ html,body{
   color: #806666;
 }
 
-#page-header .quote{
-  width: 20%;
+
+.quote{
+  margin-top: -85px;
+  padding-right: 1.5em;
+  width: 27%;
   background-color: rgba(243, 154, 249, 0.2);
+}
+
+.quote blockquote{
+  width: 100%;
 }
 
 /*** PAGE-BODY ***/
@@ -297,15 +304,6 @@ footer .links a{
     padding: 0;
   }
 
-  .quote{
-    margin-top: -85px;
-    padding-right: 2em;
-  }
-
-  .quote blockquote{
-    width: 100%;
-  }
-
    #page-footer .contact{
     width: 100%;
   }
@@ -383,14 +381,7 @@ footer .links a{
   }
 
   .quote{
-    margin-top: -55px;
-    padding-right: 7em;
-    width: 40%;
-  }
-
-  .quote blockquote{
-    font-size: 12px;
-    width: 100%;
+    display: none;
   }
 }
 
