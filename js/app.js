@@ -11,9 +11,6 @@
             // set the location.hash to the id of
             // the element you wish to scroll to.
             $location.hash(eID);
-            if (eID === "contact"){
-              $('.first-name').attr({'autofocus': 'ture' });
-            }
             // call $anchorScroll()
             anchorSmoothScroll.scrollTo(eID);
 
@@ -56,10 +53,6 @@
 
     this.isSelectedComment = function(checkedComment){
       return this.myComment === checkedComment
-    };
-
-    this.isActiveComment = function(){
-      return angular.element('.commentDiv').hasClass('activeComment');
     };
 
   });
@@ -187,7 +180,7 @@
         image: "http://i.imgur.com/TvyCa4A.png",
         description: "A Solar, Lunar and International Public Holiday calendar application. USING: Ruby on Rails, enrico gem, API and Lunar date CSV file."
       },{ name:"WDI Blog",
-        url:"https://github.com/rirachoi/rirachoi_blog",
+        url:"https://rirachoi-blog.herokuapp.com",
         github:"https://github.com/rirachoi/rirachoi_blog",
         image: "http://i.imgur.com/GqK4wGE.png",
         description: "This is my personal web site that is built by Ruby on Rails and jQuery."
