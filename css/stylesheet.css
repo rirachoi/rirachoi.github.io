@@ -178,6 +178,17 @@ body{
   margin: auto;
 }
 
+#page-footer h2{
+  color: #FFCCCC;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  border-bottom: 3px solid #FFF0F0;
+  margin-bottom: 10px;
+}
+
 #page-footer .about-info{
 /*  width: 200px;
   height: 0px;
@@ -279,6 +290,19 @@ footer .links a{
 }
 
 @media screen and (max-width: 640px){
+  #page-header .nav li a{
+    font-size: 40px;
+    margin: auto;
+  }
+
+  #page-body #home{
+    min-height: 100%;
+    width: 100%;
+    margin: -30px auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+  }
+
   .pro-left,
   .pro-right{
     display: block;
