@@ -76,7 +76,7 @@ body{
 
 .web-skill-icon{
   margin: auto;
-  width: 90%;
+  max-width: 90%;
 }
 
 .web-skill-icon ul{
@@ -85,9 +85,9 @@ body{
 }
 
 .web-skill-icon li{
-/*  display: inline-block;*/
+  display: inline-block;
   margin: auto;
-  float: left;
+  max-width: 100px;
 }
 
 .web-skill-icon img{
@@ -100,21 +100,51 @@ body{
   transform: scale(1.5, 1.5);
 }
 
-.web-skill-icon li p{
-  width: 100%;
+.web-skill-icon p{
+  width: 860px;
   padding: 0.2em;
-  display: block;
+  text-align: center;
   background-color:rgba(225,225,225,0.7);
 }
 
-.web-skill-icon li p span{
+.web-skill-icon p span{
   font-weight: 700;
   font-size: 15px;
+}
+
+.commentDiv{
+  display: block;
 }
 
 .about-summary{
   width: 700px;
   margin: auto;
+}
+
+/* comment css */
+#Rub{
+  margin-bottom: 200px;
+}
+#Jav{
+  margin-bottom: 170px;
+}
+#jQu{
+  margin-bottom: 140px;
+}
+#HTM{
+  margin-bottom: 110px;
+}
+#CSS{
+  margin-bottom: 90px;
+}
+#Ang{
+  margin-bottom: 60px;
+}
+#SAS{
+  margin-bottom: 30px;
+}
+#GIT{
+  margin-top: 5px;
 }
 
 /* PROJECTS */

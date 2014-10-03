@@ -55,8 +55,13 @@
     };
 
     this.isSelectedComment = function(checkedComment){
-      return this.myComment === checkedComment;
+      return this.myComment === checkedComment
     };
+
+    this.isActiveComment = function(){
+      return angular.element('.commentDiv').hasClass('activeComment');
+    };
+
   });
 
   app.controller('ProjectsController', function(){
@@ -144,7 +149,7 @@
         comment: "I feel quite comfortable with it now! I enjoy making websites more dynamical with this."
       },{ name: "HTML",
         image: "http://i.imgur.com/sQ51vpb.jpg",
-        comment: "It it basic of the basic! I endlessly try to improve my code with better, readable and well-structured designs"
+        comment: "It is basic of the basic! I endlessly try to improve my code with better, readable and well-structured designs"
       },{ name: "CSS",
         image: "http://i.imgur.com/LpZTHtn.jpg",
         comment: "I believe that it is a pen to draw on a sketch book in web development. I am consistantly practicing it for responsive and browser-across web design!"

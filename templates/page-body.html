@@ -18,15 +18,21 @@
       <p>On a professional note : I have a keen eye to detail, an analytical approach to problem solving and a dedicated and learned way of thinking with a touch of design flair.</p>
     </div>
 
-    <div class='web-skill-icon' ng-controller="SkillsController as skill">
-      <ul>
-        <li ng-repeat="mySkill in skill.mySkills" ng-controller="CommentsController as comments">
-          <img src="{{ mySkill.image }}" title="{{ mySkill.name}}" ng-click="comments.setComment($index)"/>
-          <p ng-show="comments.isSelectedComment($index)">
+    <div class="web-skill-icon" ng-controller="SkillsController as skill">
+      <section ng-controller="CommentsController as comment">
+        <!-- IMAGES -->
+        <ul>
+          <li ng-repeat="mySkill in skill.mySkills">
+            <img src="{{ mySkill.image }}" title="{{ mySkill.name }}" ng-mouseover="comment.setComment($index)"/>
+          </li>
+        </ul>
+        <!-- COMMENTS-->
+        <div ng-repeat="mySkill in skill.mySkills">
+          <p ng-show="comment.isSelectedComment($index)">
             <span>{{ mySkill.name }} </span>{{ mySkill.comment }}
           </p>
-        </li>
-      </ul>
+        </div>
+      </section>
     </div>
   </div>
 
