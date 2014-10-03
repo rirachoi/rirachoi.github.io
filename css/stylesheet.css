@@ -254,6 +254,11 @@ footer .links a{
   body{
     min-height: 100%;
     width: 100%;
+    padding: 0;
+  }
+
+  ul, li, div, section{
+    padding: 0;
   }
 
   #page-header,
@@ -290,9 +295,18 @@ footer .links a{
 }
 
 @media screen and (max-width: 640px){
+  ul{
+    padding: 0;
+  }
+
+  #page-header .nav li{
+    padding: 0.1em 0.2em 0.5em 0.1em;
+  }
+
   #page-header .nav li a{
-    font-size: 40px;
+    font-size: 25px;
     margin: auto;
+    padding: 0;
   }
 
   #page-body #home{
