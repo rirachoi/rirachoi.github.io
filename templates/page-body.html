@@ -1,8 +1,11 @@
 <div id="page-body">
+<!-- HOME TEMPLATE -->
   <div id="home">
     <div class="blank"></div>
     <h1>COMING SOON!</h1>
   </div>
+
+<!-- ABOUT TEMPLATE -->
   <div id="about">
     <div class="blank"></div>
     <div class='about-summary'>
@@ -17,12 +20,17 @@
 
     <div class='web-skill-icon' ng-controller="SkillsController as skill">
       <ul>
-        <li ng-repeat="mySkill in skill.mySkills">
-          <img src="{{ mySkill.image }}" title="{{ mySkill.name}}"/>
+        <li ng-repeat="mySkill in skill.mySkills" ng-controller="CommentsController as comments">
+          <img src="{{ mySkill.image }}" title="{{ mySkill.name}}" ng-click="comments.setComment($index)"/>
+          <p ng-show="comments.isSelectedComment($index)">
+            <span>{{ mySkill.name }} </span>{{ mySkill.comment }}
+          </p>
         </li>
       </ul>
     </div>
   </div>
+
+<!-- PROJECTS TEMPLATE -->
 
   <div id="projects" ng-controller="ProjectsController as project">
     <div class="blank"></div>

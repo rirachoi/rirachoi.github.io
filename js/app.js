@@ -47,6 +47,18 @@
     this.mySkills = webLanguages;
   });
 
+  app.controller('CommentsController',function(){
+    this.myComment = 10000;
+
+    this.setComment = function(selectedComment){
+      this.myComment = selectedComment;
+    };
+
+    this.isSelectedComment = function(checkedComment){
+      return this.myComment === checkedComment;
+    };
+  });
+
   app.controller('ProjectsController', function(){
     this.myProjects = projects;
   });
@@ -122,21 +134,29 @@
 
   var webLanguages = [
       { name: "Ruby On Rails",
-        image: "http://i.imgur.com/wiPDgaH.jpg"
+        image: "http://i.imgur.com/wiPDgaH.jpg",
+        comment: "I LOVE IT! I am keeping learning it to be a Ruby Ninja!"
       },{ name: "Java Script",
-        image: "http://i.imgur.com/Vu67Qdc.jpg"
+        image: "http://i.imgur.com/Vu67Qdc.jpg",
+        comment: "I am passtionate about it!"
       },{ name: "jQuery",
-        image: "http://i.imgur.com/hrTu4vP.jpg"
+        image: "http://i.imgur.com/hrTu4vP.jpg",
+        comment: "I feel quite comfortable with it now! I enjoy making websites more dynamical with this."
       },{ name: "HTML",
-        image: "http://i.imgur.com/sQ51vpb.jpg"
+        image: "http://i.imgur.com/sQ51vpb.jpg",
+        comment: "It it basic of the basic! I endlessly try to improve my code with better, readable and well-structured designs"
       },{ name: "CSS",
-        image: "http://i.imgur.com/LpZTHtn.jpg"
+        image: "http://i.imgur.com/LpZTHtn.jpg",
+        comment: "I believe that it is a pen to draw on a sketch book in web development. I am consistantly practicing it for responsive and browser-across web design!"
       },{ name: "Angular js",
-        image: "http://i.imgur.com/qhBTqhy.jpg"
+        image: "http://i.imgur.com/qhBTqhy.jpg",
+        comment: "I just started to learn it and I really like it. I built this web site with this but want to practice more!"
       },{ name: "SASS",
-        image: "http://i.imgur.com/RCogdnQ.jpg"
+        image: "http://i.imgur.com/RCogdnQ.jpg",
+        comment: "I just need to practice more with Haml"
       },{ name: "GITHUB",
-        image: "http://i.imgur.com/N1bT1iF.jpg"
+        image: "http://i.imgur.com/N1bT1iF.jpg",
+        comment: "My favorite! I use it all the time for my code managment and to check awesome open sources!"
       }
     ];
 
