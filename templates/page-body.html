@@ -22,12 +22,12 @@
         <!-- IMAGES -->
         <ul>
           <li ng-repeat="mySkill in mySkills">
-            <img src="{{ mySkill.image }}" title="{{ mySkill.name }}" ng-mouseover="mySkill.setComment($index)" ng-click="mySkill.setComment($index)"/>
+            <img src="{{ mySkill.image }}" title="{{ mySkill.name }}" ng-mouseover="setComment($index)"/>
           </li>
         </ul>
         <!-- COMMENTS-->
         <div ng-repeat="mySkill in mySkills">
-          <p ng-show="mySkill.isSelectedComment($index)">
+          <p ng-show="isSelectedComment($index)">
             <span>{{ mySkill.name }} </span>{{ mySkill.comment }}
           </p>
         </div>
