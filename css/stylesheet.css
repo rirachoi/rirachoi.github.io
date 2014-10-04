@@ -98,8 +98,41 @@ html,body{
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 15s linear alternate infinite;
+  /*animation: dash 15s linear alternate infinite;*/
+
+  -webkit-animation-name : dash;
+  -moz-animation-name : dash;
+  -ms-animation-name : dash;
+  animation-name : dash;
+
+  -webkit-animation-duration: 15s;
+  -moz-animation-duration: 15s;
+  -ms-animation-duration: 15s;
+  animation-duration: 15s;
+
+  -webkit-animation-timing-function : linear;
+  -moz-animation-timing-function : linear;
+  -ms-animation-timing-function : linear;
+  animation-timing-function : linear;
+
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -ms-animation-direction: alternate;
+  animation-direction: alternate;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count : infinite;
+  -moz-animation-iteration-count : infinite;
+  -ms-animation-iteration-count : infinite;
+  animation-iteration-count : infinite;
+
 }
+
+
 
 @keyframes dash {
   from {
@@ -110,6 +143,42 @@ html,body{
   }
 }
 
+@-moz-keyframes dash{
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-ms-keyframes dash{
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash{
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-o-keyframes dash{
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+
+}
 
 /* ABOUT */
 #page-body #about{
@@ -325,6 +394,11 @@ footer .links a{
 
   ul, li, div, section,footer{
     padding: 0;
+  }
+
+  footer{
+    padding-top: 0.5em;
+    border-top: 10px solid rgba(252, 236, 237, 1);
   }
 
   #page-header,
