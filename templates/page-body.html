@@ -21,13 +21,13 @@
       <section ng-controller="CommentsController as comment">
         <!-- IMAGES -->
         <ul>
-          <li ng-repeat="mySkill in skill.mySkills">
-            <img src="{{ mySkill.image }}" title="{{ mySkill.name }}" ng-mouseover="comment.setComment($index)" ng-click="comment.setComment($index)"/>
+          <li ng-repeat="mySkill in mySkills">
+            <img src="{{ mySkill.image }}" title="{{ mySkill.name }}" ng-mouseover="mySkill.setComment($index)" ng-click="mySkill.setComment($index)"/>
           </li>
         </ul>
         <!-- COMMENTS-->
-        <div ng-repeat="mySkill in skill.mySkills">
-          <p ng-show="comment.isSelectedComment($index)">
+        <div ng-repeat="mySkill in mySkills">
+          <p ng-show="mySkill.isSelectedComment($index)">
             <span>{{ mySkill.name }} </span>{{ mySkill.comment }}
           </p>
         </div>
@@ -41,7 +41,7 @@
     <div class="blank"></div>
     <h1>SLEEPLESS COLLECTION</h1>
     <ul>
-      <li ng-repeat="myProject in project.myProjects">
+      <li ng-repeat="myProject in myProjects">
         <div class="pro-left">
           <h2>{{ myProject.name }}</h2>
           <p>{{ myProject.description }}</p>

@@ -45,7 +45,7 @@
     $scope.mySkills = webLanguages;
   }]);
 
-  app.controller('CommentsController',['$scope',function($scope){
+  app.controller('CommentsController', ['$scope',function($scope){
     $scope.myComment = 10000;
 
     $scope.setComment = function(selectedComment){
@@ -59,7 +59,7 @@
   }]);
 
   app.controller('ProjectsController', ['$scope',function($scope){
-    this.myProjects = projects;
+    $scope.myProjects = projects;
   }]);
 
   app.directive("pageBody", function(){
