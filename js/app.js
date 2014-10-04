@@ -23,46 +23,48 @@
 
   app.directive("pageHeader", function(){
     return{
+      scope: true,
       restrict: "E",
       templateUrl:"templates/page-header.html",
-      controller: function(){
-        this.tab = 0;
+      controller: function($scope){
+        $scope.tab = 0;
 
-        this.setTab = function(selectedTab){
-          this.tab = selectedTab;
+        $scope.setTab = function(selectedTab){
+          $scope.tab = selectedTab;
         };
 
-        this.isSelected = function(checkedTab){
-          return this.tab === checkedTab;
+        $scope.isSelected = function(checkedTab){
+          return $scope.tab === checkedTab;
         };
       },
       controllerAs: "tab"
     };
   });
 
-  app.controller('SkillsController', function(){
-    this.mySkills = webLanguages;
-  });
+  app.controller('SkillsController', ['$scope', function($scope){
+    $scope.mySkills = webLanguages;
+  }]);
 
-  app.controller('CommentsController',function(){
-    this.myComment = 10000;
+  app.controller('CommentsController',['$scope',function($scope){
+    $scope.myComment = 10000;
 
-    this.setComment = function(selectedComment){
-      this.myComment = selectedComment;
+    $scope.setComment = function(selectedComment){
+      $scope.myComment = selectedComment;
     };
 
-    this.isSelectedComment = function(checkedComment){
-      return this.myComment === checkedComment
+    $scope.isSelectedComment = function(checkedComment){
+      return $scope.myComment === checkedComment
     };
 
-  });
+  }]);
 
-  app.controller('ProjectsController', function(){
+  app.controller('ProjectsController', ['$scope',function($scope){
     this.myProjects = projects;
-  });
+  }]);
 
   app.directive("pageBody", function(){
     return{
+      scope: true,
       restrict: "E",
       templateUrl: "templates/page-body.html"
     };
@@ -70,6 +72,7 @@
 
   app.directive("pageFooter", function(){
     return{
+      scope: true,
       restrict: "E",
       templateUrl: "templates/page-footer.html"
     };
