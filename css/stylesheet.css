@@ -537,14 +537,14 @@ footer .links a:hover{
 
 @media screen and (max-width: 320px){
 
-  html,body,footer{
+  html,body,footer,
+  .web-skill-icon ul{
     width: 320px;
   }
 
   #page-header, .nav,
   #page-body, #home, #about, #projects,
   #page-footer, #contact,
-  .web-skill-icon ul,
   .web-skill-icon p,
   #projects li{
     width: 300px;
