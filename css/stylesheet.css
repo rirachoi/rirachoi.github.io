@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
-/*@import url('http://twitter.github.com/bootstrap/assets/css/bootstrap.css');
-*/
+
 *{
   text-decoration: none;
   list-style: none;
@@ -58,7 +57,7 @@ html,body{
 /*** PAGE-BODY ***/
 
 #page-body{
-  width: 960px;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -68,20 +67,53 @@ html,body{
 
 /* HOME */
 #page-body #home{
-  min-height: 100%;
+  height: 100%;
   margin: -30px auto;
   font-size: 70px;
   text-align: center;
   color: #FFCCCC;
 }
 
-#page-body #home h1{
-  border-bottom: 3px solid #FFF0F0;
+#page-body #home img{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  padding: 0;
+  right: 0;
+  display: block;
+  bottom: 0;
+  z-index: 1;
 }
+
+
+/* SVG CSS */
+
+#Layer_1{
+  margin: auto;
+  padding: 0;
+  background-color: rgba(255, 255, 250, 0.5);
+}
+
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 15s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 
 /* ABOUT */
 #page-body #about{
-  width: 100%;
+  width: 960px;
   min-height: 100%;
   margin: 0px auto;
 }
@@ -144,7 +176,7 @@ html,body{
 /* PROJECTS */
 
 #projects{
-  width: 100%;
+  width: 960px;
   min-height: 100%;
   margin: 0px auto;
 }
@@ -205,8 +237,7 @@ html,body{
 
 /* BODY FOOTER - CONTACT */
 #page-footer{
-  width: 100%;
-  min-height: 100%;
+  width: 960px;
   min-height: 100%;
   margin: auto;
 }
@@ -296,7 +327,10 @@ footer .links a{
     padding: 0;
   }
 
-  #page-header{
+  #page-header,
+  #page-body #home,
+  #page-body #about,
+  #page-body #projects{
     width: 100%;
   }
 
@@ -306,8 +340,6 @@ footer .links a{
     min-height: 100%;
     padding: 0;
   }
-
-
 
    #page-footer .contact{
     width: 100%;
@@ -331,7 +363,7 @@ footer .links a{
 
 }
 
-@media screen and (max-width: 640px) and (min-width: 320px){
+@media screen and (max-width: 640px){
   ul{
     padding: 0;
   }
@@ -346,13 +378,13 @@ footer .links a{
     padding: 0;
   }
 
-  #page-body #home{
-    min-height: 100%;
+/*  #page-body #home{
+    max-height: 100%;
     width: 100%;
     margin: -30px auto;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 50px;
-  }
+  }*/
 
   .pro-left,
   .pro-right{
@@ -400,6 +432,33 @@ footer .links a{
   .contact textarea{
     height: 95px;
   }
+
+  #Layer_1{
+    height: 200px;
+  }
+
+}
+
+@media screen and (max-width: 320px){
+
+  html,body,footer{
+    width: 320px;
+  }
+
+  #page-header, .nav,
+  #page-body, #home, #about, #projects,
+  #page-footer, .contact,
+  .web-skill-icon ul,
+  .web-skill-icon p,
+  #projects li{
+    width: 320px;
+  }
+
+  img, p, h2, h3, #projects li{
+    width: 320px;
+    display: block;
+  }
+
 
 }
 

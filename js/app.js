@@ -2,6 +2,7 @@
 (function(){
   var app = angular.module("appPages", ['ngMobile']);
 
+// PAGE HEADER //
   app.directive('pageNav',function(){
     return{
         restrict: 'E',
@@ -41,6 +42,10 @@
     };
   });
 
+
+//// PAGE BODY ////
+
+// ABOUT //
   app.controller('SkillsController', ['$scope', function($scope){
     $scope.mySkills = webLanguages;
   }]);
@@ -57,6 +62,9 @@
     };
 
   }]);
+
+
+// PROJECT //
 
   app.controller('ProjectsController', ['$scope',function($scope){
     $scope.myProjects = projects;
@@ -79,7 +87,8 @@
     };
   });
 
-  ///// smooth scroll
+
+// SMOOTH SCROLL //
   app.service('anchorSmoothScroll', function(){
 
       this.scrollTo = function(eID) {
@@ -133,6 +142,8 @@
       };
 
   });
+
+// DATA //
 
   var webLanguages = [
       { name: "Ruby On Rails",
@@ -191,7 +202,6 @@
       }
 
     ];
-
 
 })();
 
