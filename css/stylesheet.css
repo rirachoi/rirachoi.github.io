@@ -538,15 +538,18 @@ footer .links a:hover{
 @media screen and (max-width: 320px){
 
   html,body,footer,
-  #page-header, .nav,
-  .web-skill-icon ul{
+  #page-header, .nav{
     width: 320px;
+    padding: 0;
   }
 
 
   #page-body, #home, #about, #projects,
   #page-footer, #contact,
   .web-skill-icon p,
+  .web-skill-icon img,
+  .about-summary,
+  .web-skill-icon ul,
   #projects li{
     width: 300px;
   }
