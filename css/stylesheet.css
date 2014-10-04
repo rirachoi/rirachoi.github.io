@@ -458,6 +458,9 @@ footer .links a:hover{
   ul{
     padding: 0;
   }
+  #page-header .nav{
+    text-align: center;
+  }
 
   #page-header .nav li{
     padding: 0.1em 0.2em 0.5em 0.1em;
