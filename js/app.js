@@ -1,6 +1,6 @@
 
 (function(){
-  var app = angular.module("appPages", []);
+  var app = angular.module("appPages", ['ngMobile']);
 
   app.directive('pageNav',function(){
     return{
@@ -60,6 +60,7 @@
 
   app.controller('ProjectsController', ['$scope',function($scope){
     $scope.myProjects = projects;
+
   }]);
 
   app.directive("pageBody", function(){
