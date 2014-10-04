@@ -66,7 +66,7 @@
 
 // PROJECT //
 
-  app.controller('ProjectsController', ['$scope',function($scope){
+  app.controller('ProjectsController', ['$scope', function($scope){
     $scope.myProjects = projects;
 
   }]);

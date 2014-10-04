@@ -3,7 +3,7 @@
   <div id="home">
     <div class="blank"></div>
 
-<!-- SVG NAME PATH -->
+  <!-- SVG MY NAME PATH -->
     <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="300px"
        viewBox="0 0 288.334 64" enable-background="new 0 0 288.334 64" xml:space="preserve">
@@ -51,10 +51,12 @@
     <img src="http://i.imgur.com/wVSnkv2.png" align="right"/>
   </div>
 
-<!-- ABOUT TEMPLATE -->
+  <!-- ABOUT TEMPLATE -->
+
   <div id="about">
     <div class="blank"></div>
     <h2>YOU ARE MY DESTINY</h2>
+    <!-- ABOUT ME -->
     <div class='about-summary'>
       <p>I finally found my calling in life. Originating in South Korea and previously pursuing a career in Economics and Business Management who would have thought that my destiny lay on foreign soil within the tabbed text and coloured brackets of Sublime Text and the glowing green of OSX Terminal.</p>
 
@@ -63,15 +65,16 @@
       <p>My passion is exploring my newly obtained web skills and applying them to your functional and technical specifications. Are you looking for a web developer disguised as a TDD geek, who installs gems in her sleep or someone who draws creative images as a hobby, to add that little extra something to your application? That's where I come in.</p>
     </div>
 
+    <!-- MY SKILLS -->
     <div class="web-skill-icon" ng-controller="SkillsController as skill">
       <section ng-controller="CommentsController as comment">
-        <!-- IMAGES -->
+        <!-- ICON IMAGES -->
         <ul>
           <li ng-repeat="mySkill in mySkills">
             <img src="{{ mySkill.image }}" title="{{ mySkill.name }}" ng-mouseover="setComment($index)"/>
           </li>
         </ul>
-        <!-- COMMENTS-->
+        <!-- MY SKILL COMMENTS -->
         <div ng-repeat="mySkill in mySkills">
           <p ng-show="isSelectedComment($index)">
             <span>{{ mySkill.name }} </span>{{ mySkill.comment }}
@@ -81,19 +84,21 @@
     </div>
   </div>
 
-<!-- PROJECTS TEMPLATE -->
+  <!-- PROJECTS TEMPLATE -->
 
   <div id="projects" ng-controller="ProjectsController as project">
     <div class="blank"></div>
     <h1>SLEEPLESS COLLECTION</h1>
     <ul>
       <li ng-repeat="myProject in myProjects">
+        <!-- PROJECTS INFO -->
         <div class="pro-left">
           <h2>{{ myProject.name }}</h2>
           <p>{{ myProject.description }}</p>
           <a href="{{ myProject.url}}" title="Demo" target="_blank">DEMO</a>
           <a href="{{ myProject.github}}" title="Code" target="_blank">GITHUB</a>
         </div>
+        <!-- PROJECT PREVIEW IMAGE -->
         <div class="pro-right">
           <img src="{{ myProject.image }}" title="{{ myProject.name }}" target="_blank"/>
         </div>
