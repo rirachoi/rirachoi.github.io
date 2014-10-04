@@ -296,13 +296,18 @@ footer .links a{
     padding: 0;
   }
 
-  #page-header,
+  #page-header{
+    width: 100%;
+  }
+
   #page-body,
   #page-footer{
     width:100%;
     min-height: 100%;
     padding: 0;
   }
+
+
 
    #page-footer .contact{
     width: 100%;
