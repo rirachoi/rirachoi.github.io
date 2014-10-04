@@ -5,6 +5,7 @@
   list-style: none;
   font-family: 'Open Sans Condensed', sans-serif;
   padding: 0;
+  outline-style: none;
 }
 
 html,body{
@@ -40,6 +41,15 @@ html,body{
 
 #page-header .nav a{
   color: #806666;
+}
+
+#page-header .nav a:hover{
+  color: #C89595;
+}
+
+#page-nav .active a,#page-nav .active a:hover{
+  font-weight: 700;
+  color: rgba(236, 218, 219, 1);
 }
 
 
@@ -362,11 +372,14 @@ html,body{
         border-radius: 4px;
 }
 
+.contact button:hover{
+  background-color: rgba(254, 109, 109, 1);
+}
+
 /* FOOTER */
 
 footer{
   margin: auto;
-  padding: 0.5em;
   width: 100%;
   background-color: rgba(255, 239, 247, 1);
   border-top: 15px solid rgba(252, 236, 237, 1);
@@ -383,6 +396,10 @@ footer .links a{
   padding: 0.5em;
   font-size: 20px;
   color: #806666;
+}
+
+footer .links a:hover{
+  color: #C89595;
 }
 
 @media screen and (max-width: 960px){
@@ -452,14 +469,6 @@ footer .links a{
     padding: 0;
   }
 
-/*  #page-body #home{
-    max-height: 100%;
-    width: 100%;
-    margin: -30px auto;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 50px;
-  }*/
-
   .pro-left,
   .pro-right{
     display: block;
@@ -479,6 +488,10 @@ footer .links a{
     padding: 0.5em 2em;
   }
 
+  .pro-left a:hover{
+    transform: scale(1);
+  }
+
   .web-skill-icon,
   .web-skill-icon section{
     width: 100%;
@@ -488,7 +501,16 @@ footer .links a{
   .web-skill-icon img{
     width: 60px;
     height: 60px;
+    padding: 1px;
     margin: auto;
+  }
+  .web-skill-icon img:hover{
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  .web-skill-icon p{
+    padding-top:5px;
   }
 
   .quote{
@@ -513,19 +535,23 @@ footer .links a{
 
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 320px){
 
   html,body,footer{
-    width: 300px;
+    width: 320px;
   }
 
   #page-header, .nav,
   #page-body, #home, #about, #projects,
-  #page-footer, .contact,
+  #page-footer, #contact,
   .web-skill-icon ul,
   .web-skill-icon p,
   #projects li{
     width: 300px;
+  }
+
+  .nav li a{
+    font-size: 20px;
   }
 
   img, p, h2, h3, #projects li{
