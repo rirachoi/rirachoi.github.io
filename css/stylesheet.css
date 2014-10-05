@@ -41,11 +41,25 @@ html,body{
 }
 
 #page-header #page-nav a{
-  color: #806666;
+  color: rgba(164, 164, 164, 0.8);
+
 }
 
-#page-header #page-nav a:hover{
-  color: #C89595;
+/*#page-header #page-nav a:hover{
+  color: rgba(221, 221, 221, 1);
+}*/
+
+#page-nav #home-nav:hover{
+  color: #FCECED;
+}
+#page-nav #about-nav:hover{
+  color: #C0EFD4;
+}
+#page-nav #projects-nav:hover{
+  color: #C0E8EF;
+}
+#page-nav #contact-nav:hover{
+  color: #FCC;
 }
 
 #page-nav .active a,#page-nav .active a:hover{
@@ -58,7 +72,7 @@ html,body{
   margin-top: -85px;
   padding-right: 1.5em;
   width: 27%;
-  background-color: rgba(243, 154, 249, 0.2);
+  background-color: rgba(221, 221, 221, 0.2);
 }
 
 .quote blockquote{

@@ -17,20 +17,21 @@
 
             // changing Page header bottom color
             var pageNavElem = document.getElementById('page-nav');
-            var selectedNav = document.getElementById(eID+'-nav');
+            // var selectedNav = document.getElementById(eID+'-nav');
+
             if(eID === "about"){
               pageNavElem.style.borderBottom='15px solid #C0EFD4';
-              selectedNav.style.color = '#C0EFD4';
+              pageNavElem.style.backgroundColor = 'rgba(250, 255, 252, 1)';
             }else if(eID === "projects"){
               pageNavElem.style.borderBottom='15px solid #C0E8EF';
-              selectedNav.style.color = '#C0E8EF';
+              pageNavElem.style.backgroundColor="rgba(250, 253, 254, 1)";
             }else if(eID === "contact"){
               pageNavElem.style.borderBottom='15px solid #FCC';
-              selectedNav.style.color = '#FCC';
+              pageNavElem.style.backgroundColor ="rgba(254, 246, 248, 1)";
             }else{
               pageNavElem.style.borderBottom='15px solid #FCECED';
-              selectedNav.style.color = '#FCECED';
-            }
+              pageNavElem.style.backgroundColor ="rgba(254, 255, 253, 1)";
+                          }
 
           };
         },
