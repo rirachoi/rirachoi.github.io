@@ -25,7 +25,7 @@ html,body{
   z-index: 100;
 }
 
-#page-header .nav{
+#page-header #page-nav{
   margin-top: 0;
   padding: 0.5em;
   text-align: right;
@@ -34,17 +34,17 @@ html,body{
 */  border-bottom: 15px solid rgba(252, 236, 237, 1);
 }
 
-#page-header .nav li{
+#page-header #page-nav li{
   display: inline-block;
   padding: 0.5em;
   font-size: 2em;
 }
 
-#page-header .nav a{
+#page-header #page-nav a{
   color: #806666;
 }
 
-#page-header .nav a:hover{
+#page-header #page-nav a:hover{
   color: #C89595;
 }
 
@@ -460,15 +460,15 @@ footer .links a:hover{
   ul{
     padding: 0;
   }
-  #page-header .nav{
+  #page-header #page-nav{
     text-align: center;
   }
 
-  #page-header .nav li{
+  #page-header #page-nav li{
     padding: 0.1em 0.2em 0.5em 0.1em;
   }
 
-  #page-header .nav li a{
+  #page-header #page-nav li a{
     font-size: 20px;
     margin: auto;
     padding: 0;
@@ -544,7 +544,7 @@ footer .links a:hover{
 @media screen and (max-width: 320px){
 
   html,body,footer,
-  #page-header, .nav{
+  #page-header, #page-nav{
     width: 320px;
     padding: 0;
   }
@@ -562,7 +562,7 @@ footer .links a:hover{
     width: 280px;
   }
 
-  .nav li a{
+  #page-nav li a{
     font-size: 20px;
   }
 

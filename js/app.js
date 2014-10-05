@@ -15,6 +15,23 @@
             // call $anchorScroll()
             anchorSmoothScroll.scrollTo(eID);
 
+            // changing Page header bottom color
+            var pageNavElem = document.getElementById('page-nav');
+            var selectedNav = document.getElementById(eID+'-nav');
+            if(eID === "about"){
+              pageNavElem.style.borderBottom='15px solid #C0EFD4';
+              selectedNav.style.color = '#C0EFD4';
+            }else if(eID === "projects"){
+              pageNavElem.style.borderBottom='15px solid #C0E8EF';
+              selectedNav.style.color = '#C0E8EF';
+            }else if(eID === "contact"){
+              pageNavElem.style.borderBottom='15px solid #FCC';
+              selectedNav.style.color = '#FCC';
+            }else{
+              pageNavElem.style.borderBottom='15px solid #FCECED';
+              selectedNav.style.color = '#FCECED';
+            }
+
           };
         },
         controllerAs: "scroll"
