@@ -15,10 +15,9 @@
             // call $anchorScroll()
             anchorSmoothScroll.scrollTo(eID);
 
-            // changing Page header bottom color
+            // changing Page header color
             var pageNavElem = document.getElementById('page-nav');
             // var selectedNav = document.getElementById(eID+'-nav');
-
             if(eID === "about"){
               pageNavElem.style.borderBottom='15px solid #C0EFD4';
               pageNavElem.style.backgroundColor = 'rgba(250, 255, 252, 1)';
@@ -31,8 +30,7 @@
             }else{
               pageNavElem.style.borderBottom='15px solid #FCECED';
               pageNavElem.style.backgroundColor ="rgba(254, 255, 253, 1)";
-                          }
-
+            }
           };
         },
         controllerAs: "scroll"

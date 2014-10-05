@@ -110,6 +110,13 @@ html,body{
   z-index: 1;
 }
 
+#page-body #home h3{
+  z-index: 2;
+  padding: 0;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+}
 
 /* SVG CSS */
 
@@ -452,6 +459,10 @@ footer .links a:hover{
     width: 100%;
   }
 
+  #page-body #home h3{
+    font-size: 0.9em;
+  }
+
   .web-skill-icon ul,
   .web-skill-icon p{
     width: 100%;
@@ -468,12 +479,11 @@ footer .links a:hover{
     padding: 0.5em 1em;
   }
 
+
 }
 
 @media screen and (max-width: 640px){
-  ul{
-    padding: 0;
-  }
+  /* HEADER MEDIA */
   #page-header #page-nav{
     text-align: center;
   }
@@ -487,6 +497,26 @@ footer .links a:hover{
     margin: auto;
     padding: 0;
   }
+
+  .quote{
+    display: none;
+  }
+
+  .blank{
+    height: 100px;
+  }
+
+  /* HOME MEDIA */
+
+  #Layer_1{
+    height: 200px;
+  }
+
+  #page-body #home h3{
+    font-size: 1.25em;
+  }
+
+  /* PROJECT MEDIA */
 
   .pro-left,
   .pro-right{
@@ -519,8 +549,8 @@ footer .links a:hover{
   }
 
   .web-skill-icon img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 1px;
     margin: auto;
   }
@@ -533,13 +563,7 @@ footer .links a:hover{
     padding-bottom: 5px;
   }
 
-  .quote{
-    display: none;
-  }
-
-  .blank{
-    height: 100px;
-  }
+  /* CONTACT MEDIA */
 
   .contact input, .contact textarea{
     padding: 0.5em;
@@ -549,10 +573,12 @@ footer .links a:hover{
     height: 95px;
   }
 
-  #Layer_1{
-    height: 200px;
-  }
+}
 
+@media screen and (max-width: 480px){
+  #page-body #home h3{
+    font-size: 0.93em;
+  }
 }
 
 @media screen and (max-width: 320px){
@@ -572,8 +598,13 @@ footer .links a:hover{
     width: 300px;
   }
 
+  #page-body #home h3{
+    font-size: 0.7em;
+    width: 300px;
+  }
+
   .web-skill-icon p{
-    width: 280px;
+    width: 300px;
   }
 
   #page-nav li a{
