@@ -116,6 +116,7 @@ html,body{
   margin: auto;
   position: absolute;
   width: 100%;
+  font-size: 1em;
 }
 
 /* SVG CSS */
@@ -460,7 +461,7 @@ footer .links a:hover{
   }
 
   #page-body #home h3{
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .web-skill-icon ul,
@@ -513,7 +514,7 @@ footer .links a:hover{
   }
 
   #page-body #home h3{
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   /* PROJECT MEDIA */
@@ -577,7 +578,7 @@ footer .links a:hover{
 
 @media screen and (max-width: 480px){
   #page-body #home h3{
-    font-size: 0.93em;
+    font-size: 0.7em;
   }
 }
 
@@ -599,7 +600,7 @@ footer .links a:hover{
   }
 
   #page-body #home h3{
-    font-size: 0.7em;
+    font-size: 0.5em;
     width: 300px;
   }
 
