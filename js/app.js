@@ -176,7 +176,7 @@
         comment: "The fundamentals! I endlessly try to improve my code with better, readable and well-structured designs."
       },{ name: "CSS",
         image: "http://i.imgur.com/LpZTHtn.jpg",
-        comment: "The canvas of the web. I am consistantly practicing and learning new meathods to enable responsive and cross browser web design!"
+        comment: "I am consistantly practicing and learning new meathods to enable responsive and cross browser web design!"
       },{ name: "Angular js",
         image: "http://i.imgur.com/qhBTqhy.jpg",
         comment: "I just started to learn it and I really like it. I built this web site using it but want to practice more!"
