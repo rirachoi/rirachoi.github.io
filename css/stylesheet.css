@@ -29,8 +29,9 @@ html,body{
   margin-top: 0;
   padding: 0.5em;
   text-align: right;
-  background-color: rgba(255, 239, 247, 1);
-  border-bottom: 15px solid rgba(252, 236, 237, 1);
+  background-color:rgba(254, 255, 253, 1);
+/*  background-color: rgba(255, 239, 247, 1);
+*/  border-bottom: 15px solid rgba(252, 236, 237, 1);
 }
 
 #page-header .nav li{

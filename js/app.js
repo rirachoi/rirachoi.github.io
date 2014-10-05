@@ -148,22 +148,22 @@
   var webLanguages = [
       { name: "Ruby On Rails",
         image: "http://i.imgur.com/wiPDgaH.jpg",
-        comment: "I LOVE IT! I am keeping learning it to be a Ruby Ninja!"
+        comment: "I LOVE IT! I am undergoing intensive training to be a Ruby Ninja!"
       },{ name: "Java Script",
         image: "http://i.imgur.com/Vu67Qdc.jpg",
-        comment: "I am passtionate about it!"
+        comment: "I am passionate about it!"
       },{ name: "jQuery",
         image: "http://i.imgur.com/hrTu4vP.jpg",
-        comment: "I feel quite comfortable with it now! I enjoy making websites more dynamical with this."
+        comment: "I feel quite comfortable with it now! I enjoy making websites more dynamic with this."
       },{ name: "HTML",
         image: "http://i.imgur.com/sQ51vpb.jpg",
-        comment: "It is basic of the basic! I endlessly try to improve my code with better, readable and well-structured designs"
+        comment: "The fundamentals! I endlessly try to improve my code with better, readable and well-structured designs."
       },{ name: "CSS",
         image: "http://i.imgur.com/LpZTHtn.jpg",
-        comment: "I believe that it is a pen to draw on a sketch book in web development. I am consistantly practicing it for responsive and browser-across web design!"
+        comment: "The canvas of the web. I am consistantly practicing and learning new meathods to enable responsive and cross browser web design!"
       },{ name: "Angular js",
         image: "http://i.imgur.com/qhBTqhy.jpg",
-        comment: "I just started to learn it and I really like it. I built this web site with this but want to practice more!"
+        comment: "I just started to learn it and I really like it. I built this web site using it but want to practice more!"
       },{ name: "SASS",
         image: "http://i.imgur.com/RCogdnQ.jpg",
         comment: "I just need to practice more with Haml"
