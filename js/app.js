@@ -198,7 +198,7 @@
       },{ name:"World Map News",
         url:"http://worldmapnews.herokuapp.com",
         github:"https://github.com/rirachoi/world_map_news",
-        image: "http://i.imgur.com/qSXtyDG.png",
+        image: "http://i.imgur.com/O22dKF6.png",
         description: "An international news application using geographical location with the world map. USING: Ruby on Rails, jQuery, feedzilla API, TDD with Simplecov and RSpec."
       },{ name:"NSWFR Notification",
         url:"https://github.com/rirachoi/nswfire_zabbix",
