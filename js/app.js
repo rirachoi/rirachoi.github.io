@@ -191,15 +191,15 @@
 
   var projects = [
       { name:"Fireball",
-        url:"http://fireballtalks.herokuapp.com",
-        github:"https://github.com/lyntco/fireball",
+        url:"http://rescue-peng.herokuapp.com",
+        github:"https://github.com/rirachoi/fireball_v2",
         image: "http://i.imgur.com/Iu68n7g.png",
         description: "An international chat translator and game application with 65+ own-brand stickers. USING: Ruby on Rails, Google translate API, JavaScript and jQuery, Haml."
       },{ name:"World Map News",
         url:"http://worldmapnews.herokuapp.com",
         github:"https://github.com/rirachoi/world_map_news",
         image: "http://i.imgur.com/O22dKF6.png",
-        description: "An international news application using geographical location with the world map. USING: Ruby on Rails, jQuery, feedzilla API, TDD with Simplecov and RSpec."
+        description: "An international news application using geographical location with the world map. USING: Ruby on Rails, jQuery, feedzilla API, TDD with Simplecov and RSpec. 100% TEST coverage with Rspec"
       },{ name:"NSWFR Notification",
         url:"https://github.com/rirachoi/nswfire_zabbix",
         github:"https://github.com/rirachoi/nswfire_zabbix",
