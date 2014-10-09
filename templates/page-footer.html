@@ -1,18 +1,22 @@
-<div id="page-footer">
-  <div id="blank"></div>
-  <div class="about-info"></div>
-
-  <!-- CONTACT TEMPLATE -->
-  <div class="contact" id='contact'>
-    <div class="blank"></div>
-    <h2>LET'S TALK ABOUT CODE!</h2>
-    <!-- EMAIL FORM -->
-    <form action="mailto:rira.nunu.choi@gmail.com?subject=Hello, Rira!" enctype="text/plain" method="post" role="form">
-      <p><input class="first-name" name="first-name" placeholder="First Name" type="text"/></p>
-      <p><input class="last-name" name="last-name" placeholder="Last Name" type="text"/></p>
-      <p><input class='email-address' placeholder='Your E-mail Address' type='email'/></p>
-      <p><textarea name="message" placeholder='Say Hello to Rira!' type="text"></textarea></p>
-      <p><button class="btn-send">Send</button></p>
-    </form>
+<!-- CONTACT TEMPLATE -->
+<section class="slide slide-contact"  ng-controller="parallaxCtrl">
+  <!-- PARALLAX BACKGROUND -->
+  <div class="parallax-background phone" du-parallax y="background">
+    <div id="page-footer">
+      <!-- CONTACT CONTENT -->
+      <div class="contact" id='contact'>
+        <div class="blank"></div>
+        <h2>LET'S TALK ABOUT CODE!</h2>
+        <!-- EMAIL FORM -->
+        <form action="mailto:rira.nunu.choi@gmail.com?subject=Hello, Rira!" enctype="text/plain" method="post" role="form">
+          <p><input class="first-name" name="first-name" placeholder="First Name" type="text"/></p>
+          <p><input class="last-name" name="last-name" placeholder="Last Name" type="text"/></p>
+          <p><input class='email-address' placeholder='Your E-mail Address' type='email'/></p>
+          <p><textarea name="message" placeholder='Say Hello to Rira!' type="text"></textarea></p>
+          <p><button class="btn-send">Send</button></p>
+        </form>
+      </div>
+    </div>
+    <div id="blank"></div>
   </div>
-</div>
+</section>

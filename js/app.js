@@ -1,6 +1,15 @@
 
 (function(){
-  var app = angular.module("appPages", ['ngMobile']);
+  var app = angular.module("appPages", ['ngMobile', 'duParallax']);
+
+// PARALLAX //
+  // AWESOME OPEN SOURCE
+  // Lightweight & performant parallax scrolling for angular.js.
+  // http://durated.github.io/angular-parallax/
+  app.controller('parallaxCtrl', function($scope, parallaxHelper){
+    $scope.background = parallaxHelper.createAnimator(-0.3);
+  });
+
 
 // PAGE HEADER //
   app.directive('pageNav',function(){
@@ -19,17 +28,13 @@
             var pageNavElem = document.getElementById('page-nav');
             // var selectedNav = document.getElementById(eID+'-nav');
             if(eID === "about"){
-              pageNavElem.style.borderBottom='15px solid #C0EFD4';
-              pageNavElem.style.backgroundColor = 'rgba(250, 255, 252, 1)';
+              pageNavElem.style.borderBottom='2px solid rgba(98, 128, 111, 1)';
             }else if(eID === "projects"){
-              pageNavElem.style.borderBottom='15px solid #C0E8EF';
-              pageNavElem.style.backgroundColor="rgba(250, 253, 254, 1)";
+              pageNavElem.style.borderBottom='2px solid rgba(122, 154, 159, 1)';
             }else if(eID === "contact"){
-              pageNavElem.style.borderBottom='15px solid #FCC';
-              pageNavElem.style.backgroundColor ="rgba(254, 246, 248, 1)";
+              pageNavElem.style.borderBottom='2px solid rgba(120, 94, 94, 1)';
             }else{
-              pageNavElem.style.borderBottom='15px solid #FCECED';
-              pageNavElem.style.backgroundColor ="rgba(254, 255, 253, 1)";
+              pageNavElem.style.borderBottom='none';
             }
           };
         },
@@ -67,7 +72,7 @@
   }]);
 
   app.controller('CommentsController', ['$scope',function($scope){
-    $scope.myComment = 10000;
+    $scope.myComment = 0;
 
     $scope.setComment = function(selectedComment){
       $scope.myComment = selectedComment;

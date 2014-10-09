@@ -13,8 +13,8 @@ html,body{
   padding: 0;
   width: 100%;
   max-width: 100%;
-  height: 100%;
 }
+
 
 /* PAGE-HEADER AND NAV */
 #page-header{
@@ -27,27 +27,20 @@ html,body{
 
 #page-header #page-nav{
   margin-top: 0;
-  padding: 0.5em;
   text-align: right;
-  background-color:rgba(254, 255, 253, 1);
-/*  background-color: rgba(255, 239, 247, 1);
-*/  border-bottom: 15px solid rgba(252, 236, 237, 1);
+  background-color: rgba(33, 33, 33, 1);
 }
 
 #page-header #page-nav li{
   display: inline-block;
-  padding: 0.5em;
-  font-size: 2em;
+  padding: 0.2em 0.5em;
+  font-size: 1.5em;
 }
 
 #page-header #page-nav a{
-  color: rgba(164, 164, 164, 0.8);
+  color: rgba(255,255,255,0.8);
 
 }
-
-/*#page-header #page-nav a:hover{
-  color: rgba(221, 221, 221, 1);
-}*/
 
 #page-nav #home-nav:hover{
   color: #FCECED;
@@ -69,10 +62,11 @@ html,body{
 
 
 .quote{
-  margin-top: -85px;
+  margin-top: -55px;
   padding-right: 1.5em;
   width: 27%;
   background-color: rgba(221, 221, 221, 0.2);
+  color: #fff;
 }
 
 .quote blockquote{
@@ -87,16 +81,58 @@ html,body{
 }
 
 .blank{
-  height: 150px;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+}
+
+/* parallax */
+.slide{
+  height: 100%;
+  overflow: hidden;
+}
+.slide-about{
+  border-top: 1px solid rgba(98, 128, 111, 1);
+}
+.slide-projects{
+  border-top: 1px solid rgba(122, 154, 159, 1);
+}
+.slide-contact{
+  border-top: 1px solid rgba(120, 94, 94, 1);
+}
+
+.wheel{
+  height: 100%;
+  background: url(http://i.imgur.com/Gvev1ZK.jpg?1)no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 20px;
+}
+.glasses{
+  height: 120%;
+  background: url(http://i.imgur.com/tn6rMkE.jpg?1)no-repeat;
+  background-size: 100% 125%;
+}
+.mountain{
+  min-height: 120%;
+  background: url(http://i.imgur.com/POSLjkV.jpg)no-repeat;
+  background-size: 100% 100%;
+}
+.phone{
+  min-height: 100%;
+  background: url(http://i.imgur.com/QWp7IAt.jpg)no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 20px;
 }
 
 /* HOME */
 #page-body #home{
   height: 100%;
-  margin: -30px auto;
+  margin: auto;
   font-size: 70px;
   text-align: center;
   color: #FFCCCC;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 20px;
 }
 
 #page-body #home img{
@@ -108,6 +144,7 @@ html,body{
   display: block;
   bottom: 0;
   z-index: 1;
+  opacity: 0.6;
 }
 
 #page-body #home h3{
@@ -124,7 +161,7 @@ html,body{
 #Layer_1{
   margin: auto;
   padding: 0;
-  background-color: rgba(255, 255, 250, 0.5);
+  background-color: rgba(0,0,0,0.1);
 }
 
 
@@ -164,7 +201,6 @@ html,body{
   animation-iteration-count : infinite;
 
 }
-
 
 
 @keyframes dash {
@@ -215,9 +251,11 @@ html,body{
 
 /* ABOUT */
 #page-body #about{
-  width: 960px;
-  min-height: 100%;
-  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 20px
 }
 
 #about h2{
@@ -232,6 +270,7 @@ html,body{
 .web-skill-icon{
   margin: auto;
   max-width: 90%;
+  padding-bottom: 45px;
 }
 
 .web-skill-icon ul{
@@ -244,24 +283,29 @@ html,body{
   display: inline-block;
   margin: auto;
   max-width: 100px;
+
 }
 
 .web-skill-icon img{
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   margin: auto;
 }
 
 .web-skill-icon img:hover{
-  transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+     -moz-transform: scale(1.5, 1.5);
+       -o-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
 }
 
 .web-skill-icon p{
-  width: 860px;
-  padding: 0.5em 0.2em;
+  width: 700px;
+  padding: 0.5em 0px;
   text-align: center;
   background-color:#A3ECC8;
   color: #708178;
+  margin: 1em auto;
 }
 
 .web-skill-icon p span{
@@ -272,15 +316,29 @@ html,body{
 .about-summary{
   width: 700px;
   margin: auto;
-  color: rgba(130, 159, 144, 1);
+  color: rgba(209, 234, 221, 1);
 }
 
 /* PROJECTS */
 
 #projects{
-  width: 960px;
-  min-height: 100%;
-  margin: 0px auto;
+  width: 100%;
+  min-height: 120%;
+  margin:auto;
+  background-color: rgba(0,0,0,0.5);
+  padding-bottom: 20px;
+}
+
+#projects ul{
+  width: 100%;
+  margin: auto;
+}
+
+
+#projects li{
+  min-height: 400px;
+  background-color: rgba(0,0,0,0.3);
+  margin-bottom: 5em;
 }
 
 #projects h1{
@@ -300,8 +358,8 @@ html,body{
 .pro-left{
   width: 30%;
   margin: auto;
-  color: rgba(98, 136, 152, 1);
-
+  color: rgba(173, 200, 212, 1);
+  padding-left: 5em;
 }
 
 .pro-left h2{
@@ -314,21 +372,25 @@ html,body{
   padding: 0.5em 2.5em;
   background-color: rgba(192, 232, 239, 1);
   border: 2px solid rgba(255, 255, 255, 0.5);
-  color: rgba(151, 183, 197, 1);
+  color: rgba(89, 147, 173, 1);
   margin: auto 10px auto auto;
   -webkit-border-radius: 4px;
-   -moz-border-radius: 4px;
-        border-radius: 4px;
+     -moz-border-radius: 4px;
+       -o-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .pro-left a:hover{
-  transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+     -moz-transform: scale(1.2, 1.2);
+       -o-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
   background-color: #8CABCE;
   color: #D0F2F2;
 }
 
 .pro-right{
-  width: 65%;
+  width: 60%;
   margin: auto;
 }
 
@@ -339,13 +401,15 @@ html,body{
 
 /* BODY FOOTER - CONTACT */
 #page-footer{
-  width: 960px;
+  width: 100%;
   min-height: 100%;
   margin: auto;
+  background-color: rgba(102, 62, 62, 0.5);
+  padding-top: 10px;
 }
 
 #page-footer h2{
-  color: #FFCCCC;
+  color: #FFE1E1;
   margin: auto;
   width: 100%;
   text-align: center;
@@ -353,28 +417,28 @@ html,body{
   margin-bottom: 10px;
 }
 
-#page-footer .about-info{
-/*  width: 200px;
-  height: 0px;
-  margin: auto;
-  background-color: #FFFFCC;
-  display: inline-block;
-  vertical-align: bottom;*/
-}
-
 #page-footer .contact{
-  width: 700px;
-  margin: auto;
+  width: 100%;
+  margin: 0px auto;
+  padding-bottom: 15%;
 }
 
 .contact p{
   text-align: center;
 }
 
+.contact form{
+  width: 60%;
+  margin: auto;
+}
+
 .contact input, .contact textarea{
   width: 95%;
   padding: 0.7em;
-  font-size: 15px;
+  font-size: 20px;
+  background-color: rgba(0,0,0, 0.2);
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .contact textarea{
@@ -386,17 +450,25 @@ html,body{
   margin: auto;
   width: 250px;
   padding: 0.5em;
-  background-color: #FFA3A3;
+  background-color: rgba(222, 158, 158, 0.8);
   color: white;
   font-size: 20px;
   border: 2px solid rgba(225, 225, 225, 0.5);
+  -webkit-appearance: none;
+   -moz-appearance: none;
+    -o-appearance: none;
   -webkit-border-radius: 4px;
-   -moz-border-radius: 4px;
-        border-radius: 4px;
+     -moz-border-radius: 4px;
+       -o-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .contact button:hover{
-  background-color: rgba(254, 109, 109, 1);
+  background-color: rgba(248, 152, 152, 1);
+  -webkit-transform: scale(1.2,1.2);
+     -moz-transform: scale(1.2,1.2);
+       -o-transform: scale(1.2,1.2);
+          transform: scale(1.2,1.2);
 }
 
 /* FOOTER */
@@ -404,8 +476,8 @@ html,body{
 footer{
   margin: auto;
   width: 100%;
-  background-color: rgba(255, 239, 247, 1);
-  border-top: 15px solid rgba(252, 236, 237, 1);
+  padding: 0.5em 0px;
+  background-color: rgba(33, 33, 33, 1);
 }
 
 footer .links{
@@ -418,7 +490,7 @@ footer .links{
 footer .links a{
   padding: 0.5em;
   font-size: 20px;
-  color: #806666;
+  color: rgba(147, 134, 134, 1);
 }
 
 footer .links a:hover{
@@ -438,8 +510,7 @@ footer .links a:hover{
 
   footer{
     width: 100%;
-    padding-top: 0.5em;
-    border-top: 10px solid rgba(252, 236, 237, 1);
+    padding: 0.5em 0px;
   }
 
   #page-header,
@@ -464,26 +535,47 @@ footer .links a:hover{
     font-size: 0.8em;
   }
 
-  .web-skill-icon ul,
-  .web-skill-icon p{
-    width: 100%;
-    margin: auto;
-  }
-
-  .web-skill-icon img{
-    width: 90px;
-    height: 90px;
-    margin: auto;
-  }
-
   .pro-left a{
     padding: 0.5em 1em;
   }
 
+  .pro-left{
+    padding-left: 2em;
+  }
+
+  #projects ul{
+    width: 100%;
+    margin: auto;
+  }
+
+  .contact form{
+    width: 80%;
+    margin: auto;
+  }
 
 }
 
 @media screen and (max-width: 640px){
+
+  /* PARALLAX MEDIA */
+
+  .wheel{
+    background-size: 160% 100%;
+  }
+  .glasses{
+    background-size: 120% 150%;
+  }
+  .mountain{
+    background-size: 150% 100%;
+  }
+  .phone{
+    background-size: 100% 100%;
+  }
+  .slide{
+    height: auto;
+    min-height: 100%;
+  }
+
   /* HEADER MEDIA */
   #page-header #page-nav{
     text-align: center;
@@ -518,6 +610,9 @@ footer .links a:hover{
   }
 
   /* PROJECT MEDIA */
+  #projects li{
+    padding: 20px 0;
+  }
 
   .pro-left,
   .pro-right{
@@ -525,6 +620,10 @@ footer .links a:hover{
     width: 95%;
     text-align: center;
     padding-bottom: 1em;
+  }
+
+  .pro-left{
+    padding-left: 0;
   }
 
   .pro-left p, .about-summary {
@@ -546,6 +645,11 @@ footer .links a:hover{
   .web-skill-icon section{
     width: 100%;
     max-width: 100%;
+    margin: auto;
+  }
+
+  .web-skill-icon p{
+    width: 95%;
     margin: auto;
   }
 
@@ -574,11 +678,58 @@ footer .links a:hover{
     height: 95px;
   }
 
+  .contact form{
+    width: 88%;
+    margin: auto;
+  }
+
 }
 
 @media screen and (max-width: 480px){
   #page-body #home h3{
-    font-size: 0.7em;
+    font-size: 0.65em;
+  }
+
+}
+
+@media screen and (max-width: 370px){
+  #page-body #home h3{
+    font-size: 0.5em;
+  }
+
+  #about h2{
+    font-size: 40px;
+    margin-top: -30px;
+  }
+
+  .web-skill-icon{
+    margin-top: -15px;
+  }
+
+  .web-skill-icon img{
+    width: 45px;
+    height: 40px;
+    margin-top: 2px;
+    padding: 1px;
+  }
+
+  #omit-mobile{
+    display: none;
+  }
+
+  .about-summary p{
+    border: 0;
+    margin: 3px 0;
+    text-align: left;
+    text-indent: 12px;
+  }
+
+  .mountain{
+    background-size: 150% 100%;
+  }
+
+  .phone{
+    background-size: 130% 100%;
   }
 }
 
@@ -591,12 +742,18 @@ footer .links a:hover{
   }
 
 
-  #page-body, #home, #about, #projects,
-  #page-footer, #contact,
+  #page-body, #home, #about,
+  #projects, #page-footer{
+    width: 320px;
+  }
+
+  #contact,
   .about-summary,
   .web-skill-icon ul,
   #projects li{
     width: 300px;
+    margin: auto;
+    text-align: center;
   }
 
   #page-body #home h3{
@@ -610,6 +767,11 @@ footer .links a:hover{
 
   #page-nav li a{
     font-size: 20px;
+  }
+
+  .contact form{
+    width: 100%;
+    margin: auto;
   }
 
   img, p, h2, h3, #projects li{
