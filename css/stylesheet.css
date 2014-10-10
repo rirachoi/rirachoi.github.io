@@ -730,6 +730,15 @@ footer .links a:hover{
 }
 
 @media screen and (max-width: 370px){
+  .blank {
+    height: 60px;
+  }
+
+  #page-footer h2,
+  #projects h1 {
+    font-size: 2.5em;
+  }
+
   #page-body #home h3{
     font-size: 0.5em;
   }
@@ -767,6 +776,10 @@ footer .links a:hover{
 
   .phone{
     background-size: 130% 100%;
+  }
+
+  .contact p{
+    margin: 1em auto;
   }
 }
 
