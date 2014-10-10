@@ -368,7 +368,7 @@ html,body{
 }
 
 .demo-links{
-  width: 60%;
+  width: 100%;
   margin: 5em auto;
 }
 
@@ -448,12 +448,12 @@ html,body{
 }
 
 .pro-right{
-  width: 22em;
+  height: 112%;
   margin: auto;
 }
 
 .project-description{
-  width: 350px;
+  width: 90%;
   margin: 3em auto 0;
   font-size: 1.2em;
 }
@@ -557,82 +557,9 @@ footer .links a:hover{
   color: #C89595;
 }
 
+/* Height - MEDIA*/
 
-@media screen and (max-width: 980px) and (max-height: 1280px){
-    #about h2,
-    #page-footer h2,
-    #projects h1{
-      font-size: 5em;
-    }
-
-    .blank{
-      height: 160px;
-    }
-
-    #page-body #home h3{
-      font-size: 1.5em;
-    }
-
-    #page-footer .contact{
-      height: 1280px;
-      padding-bottom: 0;
-    }
-
-    .about-summary p{
-      font-size: 1em;
-    }
-
-    .pro-right{
-      width: 15em;
-    }
-
-    .face.back{
-      width: 90%;
-    }
-
-    .flip-card{
-      height: 90%
-    }
-
-    .project-box p {
-      width: 80%;
-      font-size: 0.85em;
-    }
-
-    .project-box h2 {
-      font-size: 30px;
-    }
-    .demo-links {
-      width: 100%;
-      margin: 3em auto;
-    }
-
-    .demo-links a{
-      padding: 0.5em 1.5em;
-    }
-
-    .web-skill-icon {
-      margin: 2em auto;
-      padding-bottom: 0;
-    }
-
-    .web-skill-icon img{
-      width: 75px;
-      height: 75px;
-    }
-
-    .contact form {
-      width: 80%;
-    }
-}
-
-@media screen and (max-width: 1350px) and (max-height: 600px){
-    #about h2,
-    #page-footer h2,
-    #projects h1{
-      font-size: 3.5em;
-    }
-
+@media screen and (max-width: 1280px) and (max-height: 900px){
     #page-body #home h3{
       font-size: 1em;
     }
@@ -640,10 +567,6 @@ footer .links a:hover{
     .about-summary {
       width: 700px;
       font-size: 1em;
-    }
-
-    #omit-mobile{
-      display: none;
     }
 
     .web-skill-icon {
@@ -670,10 +593,73 @@ footer .links a:hover{
     }
 
     .contact textarea{
-      height: 5em;
       min-height: 5em;
     }
 }
+
+
+@media screen and (max-width: 990px) and (max-height: 1280px){
+    #about h2,
+    #page-footer h2,
+    #projects h1{
+      font-size: 5em;
+    }
+
+    .blank{
+      height: 160px;
+    }
+
+    #page-footer .contact{
+      height: 1280px;
+      padding-bottom: 0;
+    }
+
+    .about-summary{
+      margin: 3% auto;
+    }
+
+    .about-summary p{
+      font-size: 1em;
+    }
+
+
+    .flip-card{
+      height: 90%
+    }
+
+    .project-box p {
+      width: 80%;
+      font-size: 0.85em;
+    }
+
+    .project-box h2 {
+      font-size: 30px;
+    }
+
+    .pro-right{
+      height: 110%;
+    }
+
+    .demo-links {
+      width: 100%;
+      margin: 3em auto;
+    }
+
+    .web-skill-icon {
+      margin: 2em auto;
+      padding-bottom: 0;
+    }
+
+    .web-skill-icon img{
+      width: 75px;
+      height: 75px;
+    }
+
+    .contact form {
+      width: 80%;
+    }
+}
+
 
 @media screen and (max-width: 800px) and (max-height: 1024px){
   body{
@@ -710,32 +696,36 @@ footer .links a:hover{
     height: 100%;
   }
 
+  #about h2, #page-footer h2, #projects h1 {
+    font-size: 4em;
+  }
+
   #page-body #home h3{
     font-size: 0.8em;
   }
 
+  .about-summary{
+      width: 90%;
+  }
+
   .about-summary p{
-    font-size: 0.7em;
+    font-size: 1em;
+  }
+
+  .web-skill-icon p {
+    width: 100%;
   }
 
   #projects li{
     width: 50%;
   }
 
-  .demo-links a{
-    padding: 0.5em 2.5em;
-  }
-
   .project-box h2 {
     font-size: 40px;
   }
 
-  .pro-right {
-    width: 20em;
-  }
-
-  .project-box{
-
+  .project-box p{
+    font-size: 1em;
   }
 
   #projects ul{
@@ -750,7 +740,14 @@ footer .links a:hover{
 
 }
 
-@media screen and (max-width: 640px) and (max-height:640px){
+@media screen and (max-height: 680px){
+  #omit-mobile{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 750px) and (max-height:640px){
 
   /* PARALLAX MEDIA */
 
@@ -824,7 +821,6 @@ footer .links a:hover{
   }
 
 
-
   .demo-links:hover{
     -webkit-transform: scale(1);
        -moz-transform: scale(1);
@@ -879,7 +875,61 @@ footer .links a:hover{
 
 }
 
-@media screen and (max-width: 480px) and (max-height: 640px){
+/* Width MEDIA */
+
+@media screen and (max-width: 940px){
+  #projects li{
+    width: 50%;
+  }
+
+  .project-box p {
+    width: 80%;
+    font-size: 1.15em;
+  }
+}
+
+@media screen and (max-width: 640px){
+  #about h2, #page-footer h2, #projects h1 {
+    font-size: 3em;
+  }
+
+  .project-box h2 {
+    font-size: 35px;
+  }
+
+  .project-box p{
+    font-size: 1em;
+  }
+
+  .pro-right{
+    height: 100%;
+  }
+
+  .face{
+    height: 100%;
+  }
+
+  .face.back{
+    width: 100%;
+    height: 90%;
+  }
+
+    #projects li{
+    width: 100%;
+  }
+
+  .project-box p{
+    font-size: 1.25em;
+  }
+
+  .web-skill-icon img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+
+@media screen and (max-width: 480px){
   #Layer_1 {
     height: 135px;
   }
@@ -898,7 +948,7 @@ footer .links a:hover{
 
 }
 
-@media screen and (max-width: 360px) and (max-height: 640px){
+@media screen and (max-width: 360px){
   .blank {
     height: 60px;
   }
@@ -950,7 +1000,7 @@ footer .links a:hover{
   }
 }
 
-@media screen and (max-width: 320px) and (max-height: 480px){
+@media screen and (max-width: 320px){
 
   html,body,footer,
   #page-header, #page-nav{
@@ -992,7 +1042,6 @@ footer .links a:hover{
   .about-summary p{
     font-size: 0.9em;
     text-align: left;
-
     margin: auto;
   }
 
