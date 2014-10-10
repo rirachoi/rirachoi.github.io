@@ -102,9 +102,8 @@ html,body{
 
 .wheel{
   height: 100%;
-  background: url(http://i.imgur.com/ZFIobTn.jpg)no-repeat;
-  background-size: 100% 100%;
   padding-bottom: 20px;
+  /* This image url is in the HTML style */
 }
 .glasses{
   height: 120%;
