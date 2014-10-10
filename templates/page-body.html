@@ -104,16 +104,24 @@
         <h1>SLEEPLESS COLLECTION</h1>
         <ul>
           <li ng-repeat="myProject in myProjects">
-            <!-- PROJECTS INFO -->
-            <div class="pro-left">
+            <!-- PROJECTS PREVIEW -->
+            <div class="project-box">
               <h2>{{ myProject.name }}</h2>
-              <p>{{ myProject.description }}</p>
+              <div class="flip-card">
+                <!-- PROJECT FLIP FRONT-->
+                <div class="project-preview front face">
+                  <img src="{{ myProject.image }}" title="{{ myProject.name }}" target="_blank" class="pro-right"/>
+                </div>
+                <!-- PROJECT FLIP BACK-->
+                <div class="back face">
+                  <p class="project-description">{{ myProject.description }}</p>
+                </div>
+              </div>
+            </div>
+            <!-- PROJECT LINKS -->
+            <div class="demo-links">
               <a href="{{ myProject.url}}" title="Demo" target="_blank">DEMO</a>
               <a href="{{ myProject.github}}" title="Code" target="_blank">GITHUB</a>
-            </div>
-            <!-- PROJECT PREVIEW IMAGE -->
-            <div class="pro-right">
-              <img src="{{ myProject.image }}" title="{{ myProject.name }}" target="_blank"/>
             </div>
           </li>
         </ul>

@@ -92,6 +92,21 @@
 
   }]);
 
+  // app.controller('PreviewsController',['$scope',function($scope){
+  //   $scope.myDescription = 0;
+
+  //   $scope.setDesc = function(selectedDesc){
+  //     $scope.myDescription = selectedDesc;
+  //   };
+
+  //   $scope.isSelectedDesc = function(checkedDesc){
+  //     return $scope.myDescription === checkedDesc;
+  //   };
+
+  // }]);
+
+
+// OTHERS //
   app.directive("pageBody", function(){
     return{
       scope: true,
