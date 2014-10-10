@@ -878,6 +878,10 @@ footer .links a:hover{
     text-align: center;
   }
 
+  #projects li{
+    margin: 20px auto;
+  }
+
   #page-body #home h3{
     font-size: 0.5em;
     width: 300px;
