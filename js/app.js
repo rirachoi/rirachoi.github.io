@@ -92,19 +92,6 @@
 
   }]);
 
-  // app.controller('PreviewsController',['$scope',function($scope){
-  //   $scope.myDescription = 0;
-
-  //   $scope.setDesc = function(selectedDesc){
-  //     $scope.myDescription = selectedDesc;
-  //   };
-
-  //   $scope.isSelectedDesc = function(checkedDesc){
-  //     return $scope.myDescription === checkedDesc;
-  //   };
-
-  // }]);
-
 
 // OTHERS //
   app.directive("pageBody", function(){
@@ -223,17 +210,17 @@
       },{ name:"NSWFR Notification",
         url:"https://github.com/rirachoi/nswfire_zabbix",
         github:"https://github.com/rirachoi/nswfire_zabbix",
-        image: "http://i.imgur.com/suv8bt1.png",
+        image: "http://i.imgur.com/UGxgmtW.png",
         description: "Zabbix Email, SMS and Web Linked Alerting framework. Consists of multiple forms that are browser independent and cross platform. Built in HTML, CSS and jQuery. Utilized by NSW Fire and Rescue for Infrastructure Alerting, Outages and Notifications."
       },{ name:"SoLoHo Calendar",
         url:"http://publicholiday-calendar.herokuapp.com",
         github:"https://github.com/rirachoi/SOLUHO_calendar",
-        image: "http://i.imgur.com/TvyCa4A.png",
+        image: "http://i.imgur.com/mEFW74X.png",
         description: "A Solar, Lunar and International Public Holiday calendar application. USING: Ruby on Rails, enrico gem, API and Lunar date CSV file."
       },{ name:"WDI Blog",
         url:"https://rirachoi-blog.herokuapp.com",
         github:"https://github.com/rirachoi/rirachoi_blog",
-        image: "http://i.imgur.com/GqK4wGE.png",
+        image: "http://i.imgur.com/pMuqW8I.png",
         description: "This is my personal web site that is built by Ruby on Rails and jQuery."
       }
 
